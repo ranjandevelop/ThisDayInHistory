@@ -35,8 +35,9 @@ const Home = () => {
     console.log(typeof e.target.value);
     const input = e.target.value;
     const splitInput = input.split("-");
-    setMonth((parseInt(splitInput[1], 10) - 1).toString());
+    setMonth(parseInt(splitInput[1], 10).toString());
     setDay(splitInput[2]);
+    console.log(month, day);
   };
 
   return (
