@@ -42,6 +42,7 @@ const Home = () => {
 
   return (
     <>
+      {/* Header */}
       <section className="p-9 flex justify-between flex-wrap border-shadow px-9 bg-indigo-50">
         <div className="text-xl font-bold m-1 md:m-1">
           This day in History:{" "}
@@ -63,7 +64,7 @@ const Home = () => {
           />
         </span>
       </section>
-
+      {/* hero section */}
       <section className="border grid md:grid-cols-12 bg-indigo-50">
         <div className="col-span-8 border flex justify-center items-center p-4">
           <Featured month={month} day={day} />
@@ -72,11 +73,11 @@ const Home = () => {
           <Birthdays month={month} day={day} />
         </div>
       </section>
-
+      {/* Events section */}
       <section className="bg-indigo-100">
         <Events month={month} day={day} />
       </section>
-
+      {/* footer section */}
       <section>
         <footer className="text-center p-4">
           <a href="https://github.com/ranjandevelop">ranjandevelop</a> &copy;
